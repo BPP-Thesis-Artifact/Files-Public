@@ -20,3 +20,7 @@
 - sources/AsteriskAndAmpersand - Copy (2).cpp
 - sources/AsteriskAndAmpersand - Copy.cpp
 - sources/ReturnVoid - Copy.cpp
+## 2025-10-07 14:49:27 UTC
+
+### Removed:
+- sources/ValuesPerByte - Copy.cpp
