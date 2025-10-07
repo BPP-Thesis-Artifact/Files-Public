@@ -24,3 +24,7 @@
 
 ### Removed:
 - sources/ValuesPerByte - Copy.cpp
+## 2025-10-07 15:06:10 UTC
+
+### Removed:
+- sources/ValuesOfValidatedInformationUnits - Copy.cpp
