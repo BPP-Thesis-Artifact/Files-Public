@@ -28,3 +28,7 @@
 
 ### Removed:
 - sources/ValuesOfValidatedInformationUnits - Copy.cpp
+## 2025-10-11 14:33:31 UTC
+
+### Modified:
+- sources/AsteriskAndAmpersand.cpp
