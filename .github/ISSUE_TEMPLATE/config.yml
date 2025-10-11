@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "Report Error"
+    url: "https://github.com/BPP-Thesis-Artifact/Files-Public/issues/new?template=report_error.yml"
+    about: "Use this template to report errors in the source code, the book or the repository"
+  - name: "Suggest Improvement"
+    url: "https://github.com/BPP-Thesis-Artifact/Files-Public/issues/new?template=suggest_improvement.yml"
+    about: "Use this template to suggest improvements to explanations, examples, structure..."
+  - name: "Request new Content"
+    url: "https://github.com/BPP-Thesis-Artifact/Files-Public/issues/new?template=request_content.yml"
+    about: "Use this template to request new topics, examples, etc. you would like to see in the future"
+  - name: "Other Issue"
+    url: "https://github.com/BPP-Thesis-Artifact/Files-Public/issues/new?template=other_issue.yml"
+    about: "Use this template to report an Issue that is not covered under the provided templates"
