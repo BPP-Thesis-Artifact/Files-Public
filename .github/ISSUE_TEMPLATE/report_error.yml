@@ -53,9 +53,9 @@ body:
     attributes:
       label:  How severe is the error?
       options:
-        - Severe: Blocks learning
-        - Moderate: Confusing
-        - Minor/Costmetic
+        - Severe | Blocks learning
+        - Moderate | Confusing
+        - Minor | Costmetic
     validations:
       reqiored: true
 
