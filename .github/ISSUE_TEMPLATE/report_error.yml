@@ -42,7 +42,7 @@ body:
   - type: textarea
     id: suggestion
     attributes:
-      label:  Optional: Suggest a correction
+      label:  Suggest a correction (Optional)
       description: "If you know how to fix it, suggest your fix here."
       placeholder: "The code should..."
     validations:
