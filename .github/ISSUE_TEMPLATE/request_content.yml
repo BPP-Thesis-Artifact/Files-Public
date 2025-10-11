@@ -14,10 +14,10 @@ body:
     attributes:
       label: What area of the course does this request touch?
       options:
-        - The Book
-        - The Source Code
-        - The GitHub Repository
-        - Other
+        - label: The Book
+        - label: The Source Code
+        - label: The GitHub Repository
+        - label: Other
     validations:
       required: true
 
