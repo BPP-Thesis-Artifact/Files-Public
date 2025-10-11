@@ -18,7 +18,7 @@ body:
         - Source Code
         - The GitHub Course
         - Other
-    validation:
+    validations:
       required: true
   
   - type: input
@@ -27,7 +27,7 @@ body:
       label:  Where does this error occur exactly?
       description: "Provide the file name, page number or repository section if applicable."
       placeholder: "Example: sources/RatNumRefSem_3/math_helper.cpp"
-    validation:
+    validations:
       required: true
 
   - type: textarea
@@ -36,7 +36,7 @@ body:
       label: Describe the issue
       description: "Explain what is wrong."
       placeholder: "The code example does not compile because..."
-    validation:
+    validations:
       required: true
 
   - type: textarea
@@ -56,6 +56,6 @@ body:
         - Severe: Blocks learning
         - Moderate: Confusing
         - Minor/Costmetic
-    validation:
+    validations:
       reqiored: true
 
