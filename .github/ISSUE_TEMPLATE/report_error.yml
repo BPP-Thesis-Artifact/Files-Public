@@ -16,7 +16,7 @@ body:
       options:
         - The Book
         - Source Code
-        - The GitHub Course
+        - The GitHub Repository
         - Other
     validations:
       required: true
@@ -57,5 +57,5 @@ body:
         - Moderate | Confusing
         - Minor | Costmetic
     validations:
-      reqiored: true
+      required: true
 
