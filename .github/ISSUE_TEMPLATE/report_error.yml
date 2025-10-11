@@ -1,0 +1,5 @@
+name: "Report Error"
+description: "Use this template to report errors in the source code, the book or the repository"
+labels: ["bug"]
+title: "[Error] <Short description of the issue>"
+body:
