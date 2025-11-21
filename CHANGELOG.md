@@ -32,3 +32,10 @@
 
 ### Modified:
 - sources/AsteriskAndAmpersand.cpp
+## 2025-11-21 13:45:46 UTC
+
+### Modified:
+- sources/Booleans.cpp
+
+### Removed:
+- sources/RatNumRefSem/src/.rnvs_demo.cpp.swp
