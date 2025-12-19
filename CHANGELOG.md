@@ -63,3 +63,10 @@
 - sources/RatNumRefSemOp_C2V3/obj/.keep
 - sources/RatNumValSemOp/doc/.keep
 - sources/RatNumValSemOp/obj/.keep
+## 2025-12-19 20:16:27 UTC
+
+### Added:
+- book/Basic Programming Paradigms.pdf
+
+### Book:
+- Book PDF updated (book/Basic Programming Paradigms.pdf)
