@@ -2,7 +2,7 @@
 # Author: Ulrich Eisenecker,  March 20, 2025
 
 CXX = g++
-CXXFLAGS = -std=c++20 
+CXXFLAGS = -std=c++20 -static-libstdc++
 SRCDIR = src
 OBJDIR = obj
 
@@ -35,7 +35,7 @@ $(SRCDIR)/math_helper.hpp
 	$(CXX) $(CXXFLAGS) -o $(OBJDIR)/math_helper.o \
 	-c $(SRCDIR)/math_helper.cpp
 
-#Rule 7: Compile rational_number.cpp
+# Rule 7: Compile rational_number.cpp
 $(OBJDIR)/rational_number.o: $(SRCDIR)/rational_number.cpp \
 $(SRCDIR)/rational_number.hpp $(SRCDIR)/math_helper.hpp
 	$(CXX) $(CXXFLAGS) -o $(OBJDIR)/rational_number.o \

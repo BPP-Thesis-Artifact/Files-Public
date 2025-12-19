@@ -2,7 +2,7 @@
 # Author: Ulrich Eisenecker,  March 18, 2025
 
 CXX = g++
-CXXFLAGS = -std=c++20 
+CXXFLAGS = -std=c++20 -static-libstdc++
 SRCDIR = src
 OBJDIR = obj
 

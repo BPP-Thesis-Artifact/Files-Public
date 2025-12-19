@@ -39,3 +39,27 @@
 
 ### Removed:
 - sources/RatNumRefSem/src/.rnvs_demo.cpp.swp
+## 2025-12-19 18:08:50 UTC
+
+### Added:
+- sources/CallByValue.cpp
+- sources/EffectOfConst.cpp
+- sources/RationalNumberStructureReferenceSemantics_Doxyfile
+- sources/UnitTestOfCalculateRepresentableValues.cpp
+
+### Modified:
+- sources/AsteriskAndAmpersand.cpp
+- sources/Booleans.cpp
+- sources/RatNumRefSemOp/makefile
+- sources/RatNumValSemOp/makefile
+
+### Removed:
+- sources/FloatOutput.cpp
+- sources/PointerAndConst.cpp
+- sources/RatNumRefSem/obj/.gitkeep
+- sources/RatNumRefSemOp/doc/.keep
+- sources/RatNumRefSemOp/obj/.keep
+- sources/RatNumRefSemOp_C2V3/doc/.keep
+- sources/RatNumRefSemOp_C2V3/obj/.keep
+- sources/RatNumValSemOp/doc/.keep
+- sources/RatNumValSemOp/obj/.keep

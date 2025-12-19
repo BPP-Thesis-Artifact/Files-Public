@@ -1,4 +1,3 @@
-
 // Booleans by Ulrich Eisenecker, February 17,2021
 
 #include <iostream>

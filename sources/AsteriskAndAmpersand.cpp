@@ -1,4 +1,4 @@
-//AsteriskAndAmpersand.cpp by Ulrich Eisenecker, April 20 2021
+// AsteriskAndAmpersand.cpp by Ulrich Eisenecker, April 20 2021
 
 int main()
 {
