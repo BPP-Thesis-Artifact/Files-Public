@@ -86,3 +86,14 @@
 - sources/AsteriskAndAmpersand.cpp
 - sources/Booleans.cpp
 - sources/References.cpp
+## 2025-12-20 13:46:57 UTC
+
+### Added:
+- sources/PointerAndConst.cpp
+
+### Modified:
+- book/Basic Programming Paradigms.pdf
+- sources/ReturnValue.cpp
+
+### Book:
+- Book PDF updated (book/Basic Programming Paradigms.pdf)
