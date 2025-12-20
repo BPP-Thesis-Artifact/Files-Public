@@ -150,4 +150,9 @@
 - sources/ec/VAL41.KB
 - sources/ec/VAR41.KB
 - sources/ec/output.txt
-- sources/license.html
+- sources/license.html## 2025-12-20 17:18:14 UTC
+
+### The Book has been updated
+
+### Modified:
+- book/Basic Programming Paradigms in C++.pdf
