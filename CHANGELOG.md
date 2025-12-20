@@ -77,3 +77,12 @@
 
 ### Book:
 - Book PDF updated (book/Basic Programming Paradigms.pdf)
+## 2025-12-20 13:32:25 UTC
+
+### Added:
+- sources/FloatOutput.cpp
+
+### Modified:
+- sources/AsteriskAndAmpersand.cpp
+- sources/Booleans.cpp
+- sources/References.cpp

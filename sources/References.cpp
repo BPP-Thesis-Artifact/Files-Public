@@ -1,4 +1,4 @@
-// References by Ulrich Eisenecker, March 18, 2021
+//References by Ulrich Eisenecker, March 18, 2021
 
 #include <iostream>
 using namespace std;
