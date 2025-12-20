@@ -158,3 +158,7 @@
 
 ### Modified:
 - book/Basic Programming Paradigms in C++.pdf
+## 2025-12-20 17:24:03 UTC
+
+### Added:
+- sources/HelloWorld.cpp
