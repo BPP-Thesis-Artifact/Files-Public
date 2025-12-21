@@ -1,5 +1,10 @@
 # Changelog
 
+## 2025-12-21 18:42:28 UTC
+
+### Modified
+- sources/ValuesPerByte.cpp
+
 ## 2025-12-21 18:29:48 UTC
 
 ### Added
