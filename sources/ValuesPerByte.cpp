@@ -1,4 +1,4 @@
-// ValuesPerByte by Ulrich Eisenecker, July 2, 2020
+//ValuesPerByte by Ulrich Eisenecker, July 2, 2020
 
 #include <iostream>
 using namespace std;
