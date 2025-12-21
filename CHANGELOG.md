@@ -1,5 +1,13 @@
 # Changelog
 
+## 2025-12-21 18:25:45 UTC
+
+### Modified
+- sources/ValuesPerByte.cpp
+
+### Removed
+- sources/ValuesOfInformationUnits.cpp
+
 ## 2025-12-21 18:10:51 UTC
 
 ### Modified
