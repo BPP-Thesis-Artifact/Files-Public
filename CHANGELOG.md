@@ -1,5 +1,10 @@
 # Changelog
 
+## 2025-12-21 18:29:48 UTC
+
+### Added
+- sources/Sizeof.cpp
+
 ## 2025-12-21 18:25:45 UTC
 
 ### Modified
