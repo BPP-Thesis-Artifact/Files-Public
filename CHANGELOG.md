@@ -166,3 +166,9 @@
 
 ### Removed:
 - sources/HelloWorld.cpp
+## 2025-12-21 16:09:21 UTC
+
+### The Book has been updated
+
+### Modified:
+- book/Basic Programming Paradigms in C++.pdf
