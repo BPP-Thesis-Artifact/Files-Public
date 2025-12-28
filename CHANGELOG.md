@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.5e.5 — 2025-12-28 19:10:29 UTC
+
+### Book
+- Updated PDF
+
+### Modified
+- book/Basic Programming Paradigms in C++.pdf
+- sources/RatNumRefSem/src/main.cpp
+
 ## 1.5e.4 — 2025-12-28 19:03:19 UTC
 
 ### Modified
