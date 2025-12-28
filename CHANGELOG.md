@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.5e.3 — 2025-12-28 18:44:35 UTC
+
+### Book
+- Updated PDF
+
+### Modified
+- book/Basic Programming Paradigms in C++.pdf
+
 ## 1.5e.2 — 2025-12-28 18:37:31 UTC
 
 ### Modified
