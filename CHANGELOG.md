@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.5e.2 — 2025-12-28 18:37:31 UTC
+
+### Modified
+- sources/Booleans.cpp
+
 ## 1.5e.1 — 2025-12-28 18:01:32 UTC
 
 ### Book
