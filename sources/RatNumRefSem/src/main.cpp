@@ -1,6 +1,6 @@
  /*! \file main.cpp
  *
- *  Demo application for rational numbers.
+ *  Demonstration application for rational numbers.
  *
  *  \author Ulrich Eisenecker
  *  \date May 28, 2021

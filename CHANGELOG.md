@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.5e.4 — 2025-12-28 19:03:19 UTC
+
+### Modified
+- sources/RatNumRefSem/src/main.cpp
+
+### Removed
+- sources/Bools.cpp
+
 ## 1.5e.3 — 2025-12-28 18:44:35 UTC
 
 ### Book
