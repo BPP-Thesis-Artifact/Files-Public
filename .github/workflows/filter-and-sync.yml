@@ -131,8 +131,11 @@ jobs:
           MARKER="<!-- SYNC: public_repo=${PUB_REPO} public_issue=${ISSUE_NUMBER} -->"
 
           # Find existing private issue by marker
-          EXISTING=$(gh issue list --repo "$PRIVATE_REPO" --search "$MARKER in:body" --json number --jq '.[0].number' || true)
-
+          EXISTING=$(gh issue list \
+            --repo "$PRIVATE_REPO" \
+            --search "$MARKER in:body" \
+            --limit 1 \
+            | awk '{print $1}' || true)
           cat > /tmp/body.md <<EOF
           ${MARKER}
 
@@ -147,11 +150,13 @@ jobs:
 
           # Create Private Issue if new
           if [[ -z "${EXISTING}" || "${EXISTING}" == "null" ]]; then
-            NEW_NUMBER=$(gh issue create \
+            NEW_URL=$(gh issue create \
               --repo "$PRIVATE_REPO" \
               --title "[PUB #${ISSUE_NUMBER}] ${TITLE}" \
-              --body-file /tmp/body.md \
-              --json number --jq .number)
+              --body-file /tmp/body.md)
+
+            # gh prints the URL to stdout, e.g. https://github.com/ORG/REPO/issues/456
+            NEW_NUMBER="${NEW_URL##*/}"
 
             echo "Created private issue: #$NEW_NUMBER"
 
