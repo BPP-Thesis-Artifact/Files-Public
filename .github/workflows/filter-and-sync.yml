@@ -27,7 +27,7 @@ jobs:
             const action = context.payload.action;
 
             // Parse allowed type labels from a multiline repo variable.
-            const allowed = (process.env.TYPE_LABELS || "")
+            const allowedTypeLabels = (process.env.TYPE_LABELS || "")
               .split(/\r?\n/)
               .map(s => s.trim())
               .filter(Boolean);
