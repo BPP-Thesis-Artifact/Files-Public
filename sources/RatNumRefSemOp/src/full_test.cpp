@@ -1,4 +1,4 @@
-// Using Catch2 the old way.
+// Using Ca tch2 the old way.
 
 #define CATCH_CONFIG_MAIN
 #include "catch_amalgamated.hpp"

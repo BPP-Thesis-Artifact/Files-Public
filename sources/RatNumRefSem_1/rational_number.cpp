@@ -1,4 +1,4 @@
-#include <numeric> // Because of gcd().
+#include <numeric> // Because of gcd() .
 #include <iostream>
 using namespace std;
 
