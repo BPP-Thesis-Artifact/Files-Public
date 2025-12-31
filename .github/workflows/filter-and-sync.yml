@@ -170,8 +170,9 @@ jobs:
               done
             fi
 
-            # Notify editors: assign team + ping comment
-            gh issue edit "$NEW_NUMBER" --repo "$PRIVATE_REPO" --add-assignee "@$TEAM" || true
+            # Notify editors: ~assign team~ + ping comment
+            # Can assing user, not team. Comment still works
+            #gh issue edit "$NEW_NUMBER" --repo "$PRIVATE_REPO" --add-assignee "@$TEAM" || true
             gh issue comment "$NEW_NUMBER" --repo "$PRIVATE_REPO" --body "@$TEAM New synced issue from public: ${ISSUE_URL}" || true
 
           # Edit if already exists in private
