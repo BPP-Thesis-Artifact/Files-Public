@@ -180,23 +180,7 @@ jobs:
             echo "Updating private issue: #$EXISTING"
             gh issue edit "$EXISTING" --repo "$PRIVATE_REPO" --title "[PUB #${ISSUE_NUMBER}] ${TITLE}" --body-file /tmp/body.md
 
-            # Keep type labels on private in sync with current allowed type labels from public.
-            # Remove ALL allowed type labels first, then re-add current matches.
-            ALLOWED="${{ vars.SYNC_TYPE_LABELS }}"
-            while IFS= read -r lbl; do
-              lbl="$(echo "$lbl" | xargs)"
-              [[ -n "$lbl" ]] && gh issue edit "$EXISTING" --repo "$PRIVATE_REPO" --remove-label "$lbl" || true
-            done <<< "$ALLOWED"
-
-            if [[ -n "${TYPE_LABELS}" ]]; then
-              IFS=',' read -r -a arr <<< "${TYPE_LABELS}"
-              for lbl in "${arr[@]}"; do
-                lbl="$(echo "$lbl" | xargs)"
-                [[ -n "$lbl" ]] && gh issue edit "$EXISTING" --repo "$PRIVATE_REPO" --add-label "$lbl" || true
-              done
-            fi
-
-            # REMOVED: Listening for reopened creats feedback respone on contributor reopening
+            # REMOVED: Listening for reopened creates feedback respone on contributor reopening
             ## Notify editors if reopen by user but dont sync
             # if [[ "$ACTION" == "reopened" ]]; then
             #  gh issue comment "$EXISTING" --repo "$PRIVATE_REPO" \
