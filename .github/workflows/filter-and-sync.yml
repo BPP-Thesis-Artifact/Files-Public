@@ -2,8 +2,8 @@ name: Public Issues → Private Sync (with filter)
 
 on:
   issues:
-    types: [opened, edited, reopened]
-    # Only required types --> Users shouldnt close their own issues
+    types: [opened, edited]
+    # Only required types to ensure contributor authority
 
 permissions:
   issues: write
@@ -196,9 +196,10 @@ jobs:
               done
             fi
 
-            # Notify editors if reopen by user but dont sync
-            if [[ "$ACTION" == "reopened" ]]; then
-              gh issue comment "$EXISTING" --repo "$PRIVATE_REPO" \
-                --body "User reopened the public issue: ${ISSUE_URL}. Review if reconsideration is needed." || true
-            fi
+            # REMOVED: Listening for reopened creats feedback respone on contributor reopening
+            ## Notify editors if reopen by user but dont sync
+            # if [[ "$ACTION" == "reopened" ]]; then
+            #  gh issue comment "$EXISTING" --repo "$PRIVATE_REPO" \
+            #    --body "User reopened the public issue: ${ISSUE_URL}. Review if reconsideration is needed." || true
+            # fi
           fi
