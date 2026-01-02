@@ -181,6 +181,11 @@ jobs:
           else
             echo "Updating private issue: #$EXISTING"
             gh issue edit "$EXISTING" --repo "$PRIVATE_REPO" --title "[PUB #${ISSUE_NUMBER}] ${TITLE}" --body-file /tmp/body.md
+            # This ACTION check is to ensure future functionality if other triggers are ever implemented (Currently redundant)
+            if [[ "$ACTION" == "edited" ]]; then
+              gh issue comment "$EXISTING" --repo "$PRIVATE_REPO" --body \
+              "User @${AUTHOR} edited the public issue description" || true
+            fi
 
             # REMOVED: Listening for reopened creates feedback respone on contributor reopening
             ## Notify editors if reopen by user but dont sync
