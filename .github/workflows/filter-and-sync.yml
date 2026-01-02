@@ -184,7 +184,7 @@ jobs:
             # This ACTION check is to ensure future functionality if other triggers are ever implemented (Currently redundant)
             if [[ "$ACTION" == "edited" ]]; then
               gh issue comment "$EXISTING" --repo "$PRIVATE_REPO" --body \
-              "@$TEAM User edited the public issue description" || true
+              "NOTE: User edited the public issue description" || true
             fi
 
             # REMOVED: Listening for reopened creates feedback respone on contributor reopening
