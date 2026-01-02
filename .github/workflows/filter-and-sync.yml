@@ -133,6 +133,8 @@ jobs:
           # Find existing private issue by marker
           EXISTING=$(gh issue list \
             --repo "$PRIVATE_REPO" \
+            --state all \
+            # --> Without this it searches only open issues --> Closed Issues can create dublicate
             --search "$MARKER in:body" \
             --limit 1 \
             | awk '{print $1}' || true)
