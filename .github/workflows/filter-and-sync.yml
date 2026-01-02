@@ -134,10 +134,10 @@ jobs:
           EXISTING=$(gh issue list \
             --repo "$PRIVATE_REPO" \
             --state all \
-            # --> Without this it searches only open issues --> Closed Issues can create dublicate
             --search "$MARKER in:body" \
             --limit 1 \
             | awk '{print $1}' || true)
+            # --> Without "--state all" it searches only open issues --> Closed Issues can create dublicate
           cat > /tmp/body.md <<EOF
           ${MARKER}
 
