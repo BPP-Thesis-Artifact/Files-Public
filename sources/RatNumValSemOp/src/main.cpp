@@ -1,6 +1,6 @@
 /*! \file main.cpp
  *
- *  Demo application for rational numbers
+ *  Demo application for rational numbers 
  *  and corresponding operators
  *
  *  \author Ulrich Eisenecker
@@ -18,7 +18,7 @@ using namespace rational_number;
  */
 int main()
 {
-   cout << "Please enter rational number"
+   cout << "Please enter rational number" 
         << endl;
    RationalNumber a { RationalNumber::input() },
                   b { 2,3 },
@@ -35,7 +35,7 @@ int main()
    ostringstream oss;
    oss << (a - b) << (b * c) << (c / d);
    RationalNumber difference, product, quotient;
-   istringstream iss { oss.str() };
+   istringstream iss(oss.str());
    iss >> difference >> product >> quotient;
    cout << a << " - " << b << " = "
         << difference << endl

@@ -1,4 +1,3 @@
-
 #ifndef MATH_HELPER_HPP
 #define MATH_HELPER_HPP
 

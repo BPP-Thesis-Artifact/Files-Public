@@ -1,7 +1,7 @@
 // math_helper_test.cpp by Ulrich Eisenecker, March 20, 2022
 
-#include <cstdint>  // Because of intmax_t
 #include <limits> // because of numeric_limits<>
+#include <cstdint>  // Because of intmax_t
 
 #include "math_helper.hpp"
 

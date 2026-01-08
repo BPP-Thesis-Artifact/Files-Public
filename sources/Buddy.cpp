@@ -1,4 +1,4 @@
-//Buddy.cpp by Ulrich Eisenecker, May 12, 2021
+// Buddy.cpp by Ulrich Eisenecker, May 12, 2021
 
 #include <iostream>
 #include <string> // Because of string.

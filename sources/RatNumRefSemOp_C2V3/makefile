@@ -1,15 +1,15 @@
 # Makefile for RatNumRefSemOp_C2V3
-# Author: Ulrich Eisenecker, December 17, 2025
+# Author: Ulrich Eisenecker, March 20, 2025
 # Using Catch2 in a modern way.
 
 CXX = g++
-CXXFLAGS = -std=c++23
+CXXFLAGS = -std=c++20
 SRCDIR = src
 OBJDIR = obj
-C2IDIR = /opt/homebrew/include
-C2LDIR = /opt/homebrew/lib
-#C2IDIR = /home/linuxbrew/.linuxbrew/include
-#C2LDIR = /home/linuxbrew/.linuxbrew/lib
+#C2IDIR = /opt/homebrew/include
+#C2LDIR = /opt/homebrew/lib
+C2IDIR = /home/linuxbrew/.linuxbrew/include
+C2LDIR = /home/linuxbrew/.linuxbrew/lib
 
 
 # Declare "doc" and "clean" as phony
@@ -63,7 +63,7 @@ $(OBJDIR)/check: \
 $(OBJDIR)/math_helper.o $(OBJDIR)/math_helper_test.o \
 $(OBJDIR)/rational_number.o $(OBJDIR)/rational_number_test.o \
 $(OBJDIR)/rational_number_operators.o $(OBJDIR)/rational_number_operators_test.o 
-	$(CXX) $(CXXFLAGS) -L$(C2LDIR) -o $(OBJDIR)/check \
+	$(CXX) $(CXXFLAGS) -o $(OBJDIR)/check \
 	$(OBJDIR)/math_helper.o $(OBJDIR)/math_helper_test.o \
 	$(OBJDIR)/rational_number.o $(OBJDIR)/rational_number_test.o \
 	$(OBJDIR)/rational_number_operators.o $(OBJDIR)/rational_number_operators_test.o \

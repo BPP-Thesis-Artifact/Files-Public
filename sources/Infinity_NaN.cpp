@@ -1,7 +1,7 @@
 // Infinity_NaN by Ulrich Eisenecker, November 3, 2021
 
-#include <cmath> // because of sqrt() and macros INFINITY and NAN
 #include <iostream>
+#include <cmath> // because of sqrt() and macros INFINITY and NAN
 using namespace std;
 
 int main()

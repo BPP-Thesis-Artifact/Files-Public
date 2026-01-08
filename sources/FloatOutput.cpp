@@ -1,7 +1,7 @@
 // FloatOutput by Ulrich Eisenecker, November 2,2021
 
-#include <iomanip> // because of setprecision
 #include <iostream> // implicitly includes <ios>
+#include <iomanip> // because of setprecision
 using namespace std;
 
 int main()

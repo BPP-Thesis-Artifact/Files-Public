@@ -1,8 +1,8 @@
 // ReturnVoid by Ulrich Eisenecker, April 8, 2021
 
-#include <algorithm> // because of swap()
 #include <iostream>
 #include <string> // because of string
+#include <algorithm> // because of swap()
 using namespace std;
 
 void reverseString1(string & s)

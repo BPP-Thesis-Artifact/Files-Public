@@ -3,8 +3,8 @@
 
 #include <catch2/catch_test_macros.hpp>
 
-#include <cstdint>  // Because of intmax_t.
 #include <limits> // Because of numeric_limits<>.
+#include <cstdint>  // Because of intmax_t.
 
 #include "math_helper.hpp"
 
