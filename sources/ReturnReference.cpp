@@ -1,8 +1,8 @@
 // ReturnReference by Ulrich Eisenecker, April 8, 2021
 
+#include <algorithm> // because of swap()
 #include <iostream>
 #include <string> // because of string
-#include <algorithm> // because of swap()
 using namespace std;
 
 string& reverseString3(string & s)

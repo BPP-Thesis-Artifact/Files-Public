@@ -1,8 +1,8 @@
 // Input2TokenTypes.cpp Ulrich Eisenecker, January 24, 2023
 
+#include <cctype> // because of toupper()
 #include <iostream>
 #include <string>
-#include <cctype> // because of toupper()
 using namespace std;
 
 [[nodiscard]] string inputToken(istream& is) 

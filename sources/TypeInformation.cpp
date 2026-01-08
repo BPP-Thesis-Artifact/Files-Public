@@ -1,10 +1,10 @@
 // TypeInformation by Ulrich Eisenecker, August 12, 2024
 
+#include <cstddef>     // Because of std::nullptr_t.
 #include <iostream>
 #include <type_traits> // Because of is_arithmetic_v<>, is_integral_v<>, 
                        // is_unsigned_v<>, is_signed_v<>,  
                        // is_floating_point_v<>, is_same_v<>.
-#include <cstddef>     // Because of std::nullptr_t.
 using namespace std;
 
 int main()

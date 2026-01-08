@@ -4,5 +4,5 @@
 #include "catch_amalgamated.hpp"
 
 #include "math_helper_test.cpp"
-#include "rational_number_test.cpp"
 #include "rational_number_operators_test.cpp"
+#include "rational_number_test.cpp"

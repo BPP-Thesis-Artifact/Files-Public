@@ -42,6 +42,10 @@ namespace rational_number
          {
             return m_denominator;
          }
+          /*! Sets m_numerator to n,
+          *  normalizes rational number,
+          *  and returns *this as reference.
+          */
          RationalNumber& numerator(const std::intmax_t& n);
          /*! Sets m_denominator to d,
           *  normalizes rational number,
@@ -50,7 +54,7 @@ namespace rational_number
          RationalNumber& denominator(const std::intmax_t& d);
          /*! Adds rational numbers *this and r,
           *  and returns result as value.
-          */ 
+          */
          RationalNumber& add(RationalNumber r);
          /*! Subtracts rational number r from *this,
           *  stores result in *this,
@@ -67,10 +71,6 @@ namespace rational_number
           *  and return *this as reference.
           */
          RationalNumber& divide(RationalNumber r);
-         /*! Returns long double value approximating
-             the decimal value of the RationalNumber
-             *this. 
-          */ 
          /*! Serializes rational number to ostream.
           */
          void output(std::ostream& os) const;
@@ -78,9 +78,9 @@ namespace rational_number
              No error checking is performed!
           */
          void input(std::istream& is);
-          /*! Sets m_numerator to n,
-          *  normalizes rational number,
-          *  and returns *this as reference.
+         /*! Returns long double value approximating
+             the decimal value of the RationalNumber
+             *this.
           */
          [[nodiscard]] long double toLongDouble() const;
          /*! Inputs rational number from cin

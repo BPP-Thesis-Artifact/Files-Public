@@ -1,27 +1,27 @@
-// FloatOutput by Ulrich Eisenecker, November 2,2021
+// FloatOutput by Ulrich Eisenecker, January 5,2026
 
-#include <iostream> // implicitly includes <ios>
 #include <iomanip> // because of setprecision
+#include <iostream> // implicitly includes <ios>
 using namespace std;
 
 int main()
 {
    double d { };
    cout << "Formatting floating point values\n"
-        << "Enter 42.0 to terminate program.\n" 
+        << "Enter 42.0 to terminate the program.\n"
         << endl;
    do
    {
       cin >> d;
       cout << "default: " << d << endl
-           << "scientific: " 
+           << "scientific: "
            << scientific << d << endl
            << "fixed: "
            << fixed << d << endl
            << "setprecision(20): "
            << setprecision(20)
            << d << endl
-           << "hexfloat: " 
+           << "hexfloat: "
            << hexfloat << d << endl
            << "defaultfloat: "
            << defaultfloat << d << endl;

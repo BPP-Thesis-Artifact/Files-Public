@@ -2,7 +2,7 @@
 # Version using variables
 
 CXX = g++
-CXXFLAGS = -std=c++20 
+CXXFLAGS = -std=c++23 
 SRCDIR = src
 OBJDIR = obj
 

@@ -1,30 +1,35 @@
 // EC.cpp by Ulrich Eisenecker, January 25, 2024
 
-#include <iostream>
-#include <fstream>
-#include <string>
 #include <algorithm>
-#include <vector>
-#include <utility> // because of pair<>
 #include <cctype> // because of toupper()
+#include <fstream>
+#include <iostream>
+#include <source_location>
+#include <string>
+#include <utility> // because of pair<>
+#include <vector>
 
 using namespace std;
 
-constexpr bool loggingActive { false };
+constexpr bool loggingActive { true };
 
-// Logger is for logging only
+//Logger is for Logging only
 class Logger
 {
    public:
-      Logger(const string& name,const string& arguments = ""s):
-         m_name { name },m_arguments { arguments }
+      Logger(const string& arguments = "",
+             string name = source_location::current().function_name()
+            ):
+                m_name { name },
+                m_arguments { arguments}
       {
          if constexpr (loggingActive)
          {
             string indentation(++m_activeFunctions,'>');
             cout << indentation << ' '
-                 << m_name << ' '
+                 << m_name << " : " 
                  << m_arguments << endl;
+                 
          }
       }
       ~Logger()
@@ -33,14 +38,14 @@ class Logger
          {
             string indentation(m_activeFunctions--,'<');
             cout << indentation << ' '
-                 << m_name << ' '
+                 << m_name << " : " 
                  << m_arguments << endl;
          }
       }
    private:
       static inline size_t m_activeFunctions { 0 };
-      const string m_name { },
-                   m_arguments { };
+      string m_name,
+             m_arguments;
 };
 
 // Converts lower cases to upper cases in ASCII character set
@@ -595,7 +600,7 @@ class KnowledgeBase
       }
       bool prove(const string& variable) 
       {
-         Logger log("KnowledgeBase::prove"s,variable);
+         Logger log(variable);
          return m_rules.prove(*this,variable) || 
                 m_questions.ask(*this,variable);
       }
@@ -734,7 +739,7 @@ int main()
 
 bool Questions::ask(KnowledgeBase& kb,const string& variable)
 {
-   Logger log("Questions::ask"s,variable);
+   Logger log(variable);
    for (const auto& question : m_questions)
    {
       if (question.first == variable)
@@ -771,7 +776,7 @@ bool Questions::ask(KnowledgeBase& kb,const string& variable)
 
 bool Rule::prove(KnowledgeBase& kb,const string& variable) 
 {
-   Logger log("Rule::prove"s,variable);
+   Logger log(variable);
    if (variable != m_variable)
    {
       return false;
@@ -803,7 +808,7 @@ bool Rule::prove(KnowledgeBase& kb,const string& variable)
 
 bool Rules::prove(KnowledgeBase& kb,const string& variable)
 {
-   Logger log("Rules::prove"s,variable);
+   Logger log(variable);
    kb.report("Currently looking for: "s + variable + "."s);
    for (auto& rule : m_rules)
    {

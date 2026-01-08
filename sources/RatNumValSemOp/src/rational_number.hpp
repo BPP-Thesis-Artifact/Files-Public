@@ -24,9 +24,9 @@ namespace rational_number
    class RationalNumber
    {
       public:
-         /*! Constructs a normalized RationalNumber exemplar 
+         /*! Constructs a normalized RationalNumber exemplar
           *  with n for m_numerator and d for d_denominator;
-          *  default value for n is 0, 
+          *  default value for n is 0,
           *  default value for d is 1.
           */
          RationalNumber(const std::intmax_t& n = 0, const std::intmax_t& d = 1);
@@ -44,7 +44,7 @@ namespace rational_number
          }
          /*! Adds rational numbers *this and r,
           *  and returns result as value.
-          */         
+          */
          [[nodiscard]] RationalNumber add(const RationalNumber& r) const;
          /*! Subtracts rational number r from *this,
           *  and returns result as value.
@@ -55,7 +55,7 @@ namespace rational_number
           */
          [[nodiscard]] RationalNumber multiply(const RationalNumber& r) const;
          /*! Divides rational numbers *this by r,
-          *  and returns result as value.      
+          *  and returns result as value.
           */
          [[nodiscard]] RationalNumber divide(const RationalNumber& r) const;
          /*! Serializes rational number to ostream.
@@ -67,15 +67,15 @@ namespace rational_number
          void input(std::istream& is);
          /*! Returns long double value approximating
              the decimal value of the RationalNumber
-             *this. 
-          */ 
+             *this.
+          */
          [[nodiscard]] long double toLongDouble() const;
          /*! Interactively inputs rational number from cin
           *  and returns it as value.
           */
          [[nodiscard]] static RationalNumber input();
       private:
-         /*! Normalizes rational number, 
+         /*! Normalizes rational number,
           *   i.e., canonical form and m_denominator > 0.
           */
          void normalize();

@@ -1,11 +1,11 @@
 // TypeInformationTabularForm by Ulrich Eisenecker, August 12,i 2024
 
+#include <cstddef> // because of std::nullptr_t
+#include <iomanip> // because of setw()
 #include <iostream>
 #include <type_traits> // because of is_arithmeti_vc_v<>, is_integral_V<>, 
                        // is_unsigned_v_v<>, is_signed_v_v<>,  
                        // is_floating_point_v_v<>
-#include <cstddef> // because of std::nullptr_t
-#include <iomanip> // because of setw()
 using namespace std;
 
 void printLine()

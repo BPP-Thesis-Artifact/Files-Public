@@ -1,5 +1,5 @@
-#include <iostream>
 #include <numeric> // Because of gcd().
+#include <iostream>
 using namespace std;
 
 #include "math_helper.hpp"

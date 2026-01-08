@@ -8,9 +8,9 @@
  *  \date December 14, 2023 
  */
 
-#include <iostream>
-#include <cstdint> // Because of intmax_t.
 #include <cmath> // Because of abs().
+#include <cstdint> // Because of intmax_t.
+#include <iostream>
 #include <numeric> // Because of gcd().
 
 using namespace std;

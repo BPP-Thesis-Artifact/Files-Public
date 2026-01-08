@@ -1,8 +1,11 @@
 # Doxyfile for RatNumberRefSemOp_C2V3
-# Author: Ulrich Eisenecker, March 20, 2025
+# Author: Ulrich Eisenecker, December 17, 2025
 PROJECT_NAME           = RatNumberRefSemOp
 OUTPUT_DIRECTORY       = doc
 INPUT                  = src src/main.cpp
+EXCLUDE                = src/math_helper_test.cpp\
+                         src/rational_number_test.cpp\
+                         src/rational_number_operators_test.cpp
 GENERATE_LATEX         = NO
 HAVE_DOT               = YES
 CALL_GRAPH             = YES

@@ -1,8 +1,8 @@
 // ReturnValue2ndVersion by Ulrich Eisenecker, February 6, 2022
 
+#include <algorithm> // because of swap()
 #include <iostream>
 #include <string> // because of string
-#include <algorithm> // because of swap()
 using namespace std;
 
 [[nodiscard]] string reverseString5(string s)

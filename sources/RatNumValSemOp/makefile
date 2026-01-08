@@ -2,7 +2,7 @@
 # Author: Ulrich Eisenecker,  March 20, 2025
 
 CXX = g++
-CXXFLAGS = -std=c++20 
+CXXFLAGS = -std=c++23 
 SRCDIR = src
 OBJDIR = obj
 
