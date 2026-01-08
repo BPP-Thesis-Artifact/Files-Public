@@ -1,4 +1,5 @@
 # Submitting Issues
+**_As this repository is still under construction, Issues are currently closed._** 
 
 To submit an Issue (Bug, Improvement, Request) please select one of the options below.
 Please leave the [TYPE] angled bracket text in the title to make the Issues easier to categorize
