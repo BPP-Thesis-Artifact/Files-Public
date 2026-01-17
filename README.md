@@ -7,4 +7,4 @@ The latest Release can be downloaded [here](../../releases/latest). Alternativel
 ## Changelog
 The Changelog can be found [here](CHANGELOG.md) and will chronicle which files have been added, modified and deleted at any given point.
 ## Submitting Issues
-The Repository provides templates for submitting Issues such as errors, suggestions for improvements and requests for new content. Further information will be located [here](SUBMISSIONS.md)
+The Repository provides templates for submitting issues such as errors, suggestions for improvements and requests for new content. Further information can be found [here](SUBMISSIONS.md)
