@@ -22,4 +22,4 @@ Use this template to report an Issue that is not covered under the provided temp
 Check your issue at any time to see status updated. If your issue is labeled with "status: needs-info", please add additional information by editing the issue body instead of providing information in a comment.
 
 # Note
-This repository does not support Pull-Request based submissions
+This repository does not support Pull-Request based submissions at this time
