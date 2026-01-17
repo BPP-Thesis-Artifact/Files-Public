@@ -127,7 +127,7 @@ jobs:
           STATE="${{ github.event.issue.state }}"
           AUTHOR="${{ github.event.issue.user.login }}"
 
-          # Insert Hidden marker for syncing back (Unique Number) 
+          # Create hidden marker for syncing back (Unique) 
           MARKER="<!-- SYNC: public_repo=${PUB_REPO} public_issue=${ISSUE_NUMBER} -->"
 
           # Find existing private issue by marker

@@ -1,5 +1,4 @@
 # Submitting Issues
-**_As this repository is still under construction, Issues are currently closed._** 
 
 To submit an Issue (Bug, Improvement, Request) please select one of the options below.
 Please leave the [TYPE] angled bracket text in the title to make the Issues easier to categorize
@@ -18,4 +17,7 @@ Use this template to request new topics, examples, etc. you would like to see in
 
 ## Other Issue
 Use this template to report an Issue that is not covered under the provided templates  
-[Other Issue](https://github.com/BPP-Thesis-Artifact/Files-Public/issues/new?template=other_issue.yml)
+[Other Issue](https://github.com/BPP-Thesis-Artifact/Files-Public/issues/new?template=other_issue.yml
+
+# Note
+This repository does not support Pull-Request based submissions
