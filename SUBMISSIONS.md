@@ -17,7 +17,7 @@ Use this template to request new topics, examples, etc. you would like to see in
 
 ## Other Issue
 Use this template to report an Issue that is not covered under the provided templates  
-[Other Issue](https://github.com/BPP-Thesis-Artifact/Files-Public/issues/new?template=other_issue.yml
+[Other Issue](https://github.com/BPP-Thesis-Artifact/Files-Public/issues/new?template=other_issue.yml)
 
 Check your issue at any time to see status updated. If your issue is labeled with "status: needs-info", please add additional information by editing the issue body instead of providing information in a comment.
 
